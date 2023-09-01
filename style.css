@@ -1,34 +1,36 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3,1fr) 0.7fr;
-    grid-template-rows: .7fr 1.5fr 1fr 0.5fr;
-    color: white;
-    grid-gap: .9rem ;
-    margin: 1rem;
-
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "Smallb1 Smallb2 Smallb3 sidebar "
+    "Main Main Main sidebar "
+    "footer footer footer footer";
+  grid-template-rows: 0.7fr 1.5fr 1fr 0.5fr;
+  color: white;
+  grid-gap: 0.9rem;
+  margin: 1rem;
 }
-.content{
-
-    background-color:#4169E1;
-    border: 1px solid;
-    padding: 1rem;
-    font-size: larger;
-
+.content {
+  background-color: #4169e1;
+  /* border: 1px solid; */
+  padding: 1rem;
+  font-size: larger;
+  /* border: 1px solid; */
 }
-.c1{
-    grid-column: span 4;
+.c1 {
+  grid-area: header;
 }
-.c5{
-    grid-row: span 2;
+.c5 {
+  grid-area: sidebar;
 }
-.c6{
-    grid-column: span 3;
+.c6 {
+  grid-area: Main;
 }
-.c7{
-    grid-column: span 4;
+.c7 {
+  grid-area: footer;
 }
