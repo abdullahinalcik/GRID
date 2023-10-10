@@ -1,1 +1,1 @@
-https://abdullahinalcik.github.io/CC-02-GRID/
+https://abdullahinalcik.github.io/GRID/
